@@ -20,7 +20,7 @@
     font-family:'Courier New', Courier, monospace;
     font-size:1.5em;
     grid-template-columns:repeat(4,1fr);
-    justify-items:center;
+    justify-items:start;
     align-items:center;
     margin-top:50px;
     margin-bottom:50px;
@@ -61,7 +61,19 @@
 .bookContainer{
     display:grid;
     grid-auto-rows:minmax(50px,50px);
-    overflow:scroll;
+    overflow:auto;
     grid-template-columns: repeat(4,1fr);
+    font-family:'Courier New', Courier, monospace;
+    font-size:1em;
+    justify-items:start;
+    align-items:center;
+
 }
+
+.buttonDiv{
+    justify-self:left;
+}
+
+
+
 
