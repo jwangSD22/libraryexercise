@@ -1,17 +1,67 @@
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display:flex;
-    justify-content:left;
-    width:100vw;
-    flex-wrap:wrap;
-    gap:20px
+.container{
+    
+    background-color:aquamarine;
+    width:70vw;
+    height:100vh;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-rows:1fr 0.5fr 0.5fr 5fr;
+    gap:10px;
+    
 }
-div{
-    background-color: lightgray;
-    border:solid 2px black;
-    display:flex;
+
+.header{
+    margin:40px;
+}
+
+.containerHeader{
+    display:grid;
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.5em;
+    grid-template-columns:repeat(4,1fr);
+    justify-items:center;
     align-items:center;
-    width:200px;
-    height:300px;
+    margin-top:50px;
+    margin-bottom:50px;
+
 
 }
+
+#radioButtons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+    justify-items:center;
+    align-items:center;
+    
+}
+
+
+.inputField{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.readStatus{
+    height:2em;;
+    width:2em;
+}
+
+
+.input{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.bookContainer{
+    display:grid;
+    grid-auto-rows:minmax(50px,50px);
+    overflow:scroll;
+    grid-template-columns: repeat(4,1fr);
+}
+

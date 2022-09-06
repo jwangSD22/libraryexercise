@@ -10,5 +10,68 @@
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
+    
+<div class="container">
+<div class="header"><h1>
+    This is a simple app to store books that you have read and/or planning to read. You can add additional book to the list using the form attached.
+    After the book has been added to the list, you can configure its read or unread status. You can also completely delete the book from the list alltogether.
+</h1>
+</div>
+
+
+<div class="inputContainer">
+    <form action="#" class="inputField">
+<div class="input">
+    <label for="title">Book Title:</label>
+    <input type="text" class="title" name="title" id="title">
+</div>
+<div class="input">
+    <label for="author">Book Author:</label>
+    <input type="text" class="author" name="author" id="author">
+</div>
+<div class="input" id="radioButtons">
+    <label for="readStatus">Read Status:</label>
+    <input type="radio" class="readStatus" name="readStatus" id="readStatus" value="Read">Read
+    <input type="radio" class="readStatus" name="readStatus" id="readStatus" value="Unread">Unread
+</div>
+
+<div class="input">
+    
+    <button type="button" class="submitBook" id="submitBook">Submit book</button>
+</div>
+    </form>
+</div>
+
+<div class="containerHeader">
+    <div>Title</div>
+    <div>Author</div>
+    <div>Read Status</div>
+    <div>Remove Book</div>
+        </div>
+<div class="bookContainer" id="bookContainer">
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
