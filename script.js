@@ -55,7 +55,19 @@ let z = function(){
 }
 
 
-document.getElementById('submitBook').onclick = function() {
+document.getElementById('submitBook').addEventListener('click',(e)=>{e.preventDefault();submitter()})
+
+function submitter() {
+
+    let t = document.getElementById('title')
+    let a = document.getElementById('author')
+   
+    if (!(t.checkValidity()&&a.checkValidity())){
+        return alert('Please enter book information!')
+    }
+else{
+
+   
     var radios = document.getElementsByName('readStatus');
     let readStatus
     for (let radio of radios)
@@ -70,11 +82,18 @@ document.getElementById('submitBook').onclick = function() {
 
     let title = document.getElementById('title').value;
     let author = document.getElementById('author').value;
+
+
+
+
+
+
     bookMaker(title,author,readStatus,newIndex);
     document.getElementById('title').value=''
     document.getElementById('author').value= '';
     pushBook()
     }
+}
 
 
 //function that pushes the whole array to list
